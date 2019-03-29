@@ -1,0 +1,10 @@
+version: '1'
+services:
+  # HUSTOJ
+  hustoj:
+    build:
+      context: ./build/hustoj
+    restart: always
+    ports:
+      - "80：80"
+
