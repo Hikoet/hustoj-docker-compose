@@ -6,5 +6,5 @@ services:
       context: ./build/hustoj
     restart: always
     ports:
-      - "80：80"
+      - "80:80"
 
