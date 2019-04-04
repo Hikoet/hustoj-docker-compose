@@ -9,9 +9,9 @@ services:
       - "80:80"
     volumes:
       - ./data:/data:rw
-      - ./data/config/nginx/default:/etc/nginx/sites-enabled/default:rw
-      - ./data/config/php5/php.ini:/etc/php5/fpm/php.ini:rw
-      - ./data/config/db_info.inc.php:/home/judge/src/web/include/db_info.inc.php:rw
+      - ./data/config/nginx/:/etc/nginx/sites-enabled:rw
+      - ./data/config/php5/:/etc/php5/fpm:rw
+      - ./data/config/db_info:/home/judge/src/web/include:rw
     stdin_open: true
     tty: true
 
